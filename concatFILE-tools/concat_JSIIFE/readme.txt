@@ -2,9 +2,9 @@
 
 Concat in (()=>{ ... })();
 
-    concatJSIIFE output_name file file file etc..
+    concatJSIIFE output file file file etc..
 
-        output_name : name of new output file
+        output : name of new output file
 
         file : name of input file
 

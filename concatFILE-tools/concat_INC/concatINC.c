@@ -39,29 +39,6 @@ int main(int argc, char *argv[]) {
     int foundMarker = 0;
     char markerRegex[1024];
 
-
-    /* 
-    // Check mode, display version (app name only || app name + -v|--v|-version|--version)
-    printf("argv[0] : %s\n", argv[0]);
-    printf("argv[1] : %s\n", argv[1]);
-    
-    // argv[1] === abc-vABC
-    if (argc <= 2) {
-        if (regcomp(&regex, "^(--version|-version|--v|-v)$", REG_EXTENDED) != 0) {
-            fprintf(stderr, "Error compiling regular expression 1st\n");
-            return 1;
-        }
-        if (regexec(&regex, argv[1], 2, matches, 0) == 0) {
-
-            printRegGrp(argv[1], &matches[0]); // full sample match
-            printRegGrp(argv[1], &matches[1]); // group match
-        }else
-             printf("no a ver flag\n");
-
-        regfree(&regex); // Free the regular expression
-        return 0;
-    } */
-
     // Check mode, display version (app name only || app name + -v|--v|-version|--version)
     if (printVersion(argc, argv)){
         // Stop app

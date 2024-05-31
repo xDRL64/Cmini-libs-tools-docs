@@ -14,9 +14,9 @@ Concat in template (main) file by replacing a marker
 
         - read marker.regexp.readme.txt for more info.
 
-    concatINC output_name template file file file etc..
+    concatINC output template file file file etc..
 
-        output_name : name of new output file
+        output : name of new output file
 
         template : name of template file
 
