@@ -1,0 +1,5 @@
+windows :
+	gcc printVersion.c -o printVersion.exe -lregex
+
+unix :
+	gcc printVersion.c -o printVersion

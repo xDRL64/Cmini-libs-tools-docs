@@ -1,0 +1,5 @@
+windows :
+	gcc concatTEXT.c -o concatTEXT.exe -lregex
+
+unix :
+	gcc concatTEXT.c -o concatTEXT

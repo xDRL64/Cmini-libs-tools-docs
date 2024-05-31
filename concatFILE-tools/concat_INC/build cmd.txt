@@ -1,0 +1,5 @@
+windows :
+	gcc concatINC.c -o concatINC.exe -lregex
+
+unix :
+	gcc concatINC.c -o concatINC

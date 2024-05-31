@@ -1,0 +1,5 @@
+windows :
+	gcc concatJSIIFE.c -o concatJSIIFE.exe -lregex
+
+unix :
+	gcc concatJSIIFE.c -o concatJSIIFE

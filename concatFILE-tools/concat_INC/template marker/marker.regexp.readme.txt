@@ -1,0 +1,79 @@
+
+- Write the regexp on only one text line.
+
+- Do not preocupate with line returns after the regexp.
+
+- The regexp's 1st group catches white space for concat indenting
+
+- The regexp's 2nd group catches template marker
+
+- If './marker.regexp.txt' is not found the default regexp's marker is : (\\s*)(;//CONCAT_HERE)
+	And so, simply write :
+		;//CONCAT_HERE
+	in template file to put the marker.
+	Catches indent and expected without detecting syntax error for :
+		asm/c/c++/c#/js/ts/etc..
+	but not for :
+		css/html/python
+	Nevertheless, detecting syntax error from code editor with any language,
+	is not a problem at all to run correctly concat process.
+
+
+General Using Examples :
+
+
+	in general use :
+
+		^(\s*)(\/\*\s*concat input file contents here\s*\*\/)
+
+	for template.js :
+
+		|const app = (()=>{
+		|
+		|    /* concat input file contents here */
+		|
+		|    return app;
+		|})();
+
+
+	if indent does not start on the first line character :
+
+		(\s*)(\/\*\s*concat input file contents here\s*\*\/)
+
+	for template.js :
+
+		|const app = (()=>{
+		|
+		|    abc...    /* concat input file contents here */
+		|
+		|    return app;
+		|})();
+
+
+	without indent catching :
+
+		()(\/\*\s*concat input file contents here\s*\*\/)
+
+	for template.js :
+
+		|const app = (()=>{
+		|
+		|    /* concat input file contents here */
+		|
+		|    return app;
+		|})();
+
+
+	without indent but marker starts on the first line character :
+
+		^()(\/\*\s*concat input file contents here\s*\*\/)
+
+	for template.js :
+
+		|const app = (()=>{
+		|
+		|/* concat input file contents here */
+		|
+		|    return app;
+		|})();
+

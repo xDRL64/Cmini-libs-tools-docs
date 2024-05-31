@@ -1,0 +1,5 @@
+windows :
+	gcc printRegGroup.c -o printRegGroup.exe -lregex
+
+unix :
+	gcc printRegGroup.c -o printRegGroup

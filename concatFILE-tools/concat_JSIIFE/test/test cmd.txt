@@ -1,0 +1,5 @@
+windows :
+	.\concatJSIIFE.exe o.js i0.js i1.js
+
+unix :
+	./concatJSIIFE o.js i0.js i1.js

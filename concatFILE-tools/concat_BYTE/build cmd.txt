@@ -1,0 +1,5 @@
+windows :
+	gcc concatBYTE.c -o concatBYTE.exe -lregex
+
+unix :
+	gcc concatBYTE.c -o concatBYTE
