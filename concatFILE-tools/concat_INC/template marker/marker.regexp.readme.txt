@@ -7,6 +7,10 @@
 
 - The regexp's 2nd group catches template marker
 
+- The path from concatINC executable, MUST be ./marker.regexp.txt
+
+	In other words, do not forget to put it sided with concatINC exec.
+
 - If './marker.regexp.txt' is not found the default regexp's marker is : (\\s*)(;//CONCAT_HERE)
 	And so, simply write :
 		;//CONCAT_HERE

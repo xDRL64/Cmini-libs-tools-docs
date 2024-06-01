@@ -4,6 +4,8 @@ Concat in template (main) file by replacing a marker
 
         marker.regexp.txt
 
+    Place marker.regexp.txt in same folder than concatINC executable app.
+
         otherwise the default regexp is :
 
             "(\\s*)(;//CONCAT_HERE)"
