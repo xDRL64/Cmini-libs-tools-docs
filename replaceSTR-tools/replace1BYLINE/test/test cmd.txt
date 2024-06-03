@@ -1,0 +1,5 @@
+windows :
+	.\replace1BYLINE.exe o.js i.js "^const" "let"
+
+unix :
+	./replace1BYLINE o.js i.js "^const" "let"

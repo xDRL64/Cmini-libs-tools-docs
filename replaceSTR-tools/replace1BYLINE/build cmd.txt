@@ -1,0 +1,5 @@
+windows :
+	gcc replace1BYLINE.c -o replace1BYLINE.exe -lregex
+
+unix :
+	gcc replace1BYLINE.c -o replace1BYLINE
