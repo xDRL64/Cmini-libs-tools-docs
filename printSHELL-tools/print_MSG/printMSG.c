@@ -71,7 +71,7 @@ int main(int argc, char** argv) {
         if (col[i][t] == 'W') *_color = 97+v; // white
     }
 
-    printf("\033[1;%d;%dm%s\033[0m\n", color, bgcol, message);
+    printf("\033[1;%d;%dm%s\033[0m", color, bgcol, message);
 
     return 0;
 }
