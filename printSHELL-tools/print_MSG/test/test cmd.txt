@@ -1,0 +1,5 @@
+windows :
+	.\printMSG.exe "Hello" yellow _blue
+
+unix :
+	./printMSG "Hello" yellow _blue
